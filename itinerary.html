@@ -1,1 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Itinerary | Tourism Showcase</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/itinerary.css">
+</head>
+<body>
 
+  <header>
+    <h1>Tourism Showcase</h1>
+    <p>Plan your trip: schedule, budget, and booking</p>
+    <nav>
+      <ul>
+        <li><a href="Index.html">Home</a></li>
+        <li><a href="attraction.html">Attractions</a></li>
+        <li><a href="itinerary.html">Itinerary</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section id="schedule">
+      <h2>Travel Schedule</h2>
+      <p>A 3-day sample plan for your trip.</p>
+
+      <article>
+        <h3>3-Day Itinerary</h3>
+        <table>
+          <caption>Day-by-day travel schedule</caption>
+          <thead>
+            <tr>
+              <th>Day</th>
+              <th>Time</th>
+              <th>Activity</th>
+              <th>Location</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td rowspan="3">Day 1</td>
+              <td>8:00 AM</td>
+              <td>Arrival and hotel check-in</td>
+              <td>Hotel</td>
+            </tr>
+            <tr>
+              <td>12:00 PM</td>
+              <td>Lunch of local dishes</td>
+              <td>Town proper</td>
+            </tr>
+            <tr>
+              <td>2:00 PM</td>
+              <td>City tour</td>
+              <td>Tourist spot 1</td>
+            </tr>
+            <tr>
+              <td rowspan="3">Day 2</td>
+              <td>7:00 AM</td>
+              <td>Breakfast and departure</td>
+              <td>Hotel</td>
+            </tr>
+            <tr>
+              <td>9:00 AM</td>
+              <td>Nature and island visit</td>
+              <td>Tourist spot 2</td>
+            </tr>
+            <tr>
+              <td>6:00 PM</td>
+              <td>Sunset and dinner</td>
+              <td>Seaside</td>
+            </tr>
+            <tr>
+              <td rowspan="2">Day 3</td>
+              <td>8:00 AM</td>
+              <td>Souvenir shopping</td>
+              <td>Local market</td>
+            </tr>
+            <tr>
+              <td>12:00 PM</td>
+              <td>Check-out and departure</td>
+              <td>Hotel</td>
+            </tr>
+          </tbody>
+        </table>
+      </article>
+    </section>
+
+    <section id="budget">
+      <h2>Budget List</h2>
+      <p>Estimated cost per person for the whole trip.</p>
+
+      <article>
+        <h3>Estimated Expenses</h3>
+        <ul>
+          <li>Transportation: PHP 1,500</li>
+          <li>Accommodation (2 nights): PHP 2,000</li>
+          <li>Food: PHP 1,800</li>
+          <li>Tour and entrance fees: PHP 1,200</li>
+          <li>Souvenirs and extras: PHP 500</li>
+        </ul>
+        <p><strong>Total estimate: PHP 7,000</strong></p>
+      </article>
+    </section>
+
+    <section id="booking">
+      <h2>Booking Form</h2>
+      <p>Fill out the form to reserve your trip.</p>
+
+      <article>
+        <h3>Reserve Your Trip</h3>
+        <form action="#" method="post">
+
+          <label for="fullname">Full name</label>
+          <input type="text" id="fullname" name="fullname" required>
+
+          <label for="email">Email address</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="phone">Phone number</label>
+          <input type="tel" id="phone" name="phone">
+
+          <label for="arrival">Arrival date</label>
+          <input type="date" id="arrival" name="arrival" required>
+
+          <label for="guests">Number of guests</label>
+          <input type="number" id="guests" name="guests" min="1" max="20" value="1">
+
+          <label for="package">Trip package</label>
+          <select id="package" name="package">
+            <option value="budget">Budget</option>
+            <option value="standard">Standard</option>
+            <option value="premium">Premium</option>
+          </select>
+
+          <fieldset>
+            <legend>Preferred transportation</legend>
+            <input type="radio" id="van" name="transport" value="van" checked>
+            <label for="van">Van</label>
+            <input type="radio" id="bus" name="transport" value="bus">
+            <label for="bus">Bus</label>
+            <input type="radio" id="boat" name="transport" value="boat">
+            <label for="boat">Boat</label>
+          </fieldset>
+
+          <label for="notes">Special requests</label>
+          <textarea id="notes" name="notes" rows="4"></textarea>
+
+          <button type="submit">Book now</button>
+          <button type="reset">Clear form</button>
+        </form>
+      </article>
+    </section>
+
+    <section id="more">
+      <h2>Plan Further</h2>
+      <figure>
+        <img src="images/itinerary.jpg" alt="Travelers enjoying the destination">
+        <figcaption>Your next adventure starts here.</figcaption>
+      </figure>
+      <p>
+        Check the weather before you go on
+        <a href="https://www.pagasa.dost.gov.ph/" target="_blank" rel="noopener">PAGASA</a>,
+        or see <a href="attraction.html">our attractions</a> for more places to visit.
+      </p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Tourism Showcase | CC 101 1B, Group 2</p>
+    <p><a href="Index.html">Back to Home</a></p>
+  </footer>
+
+</body>
+</html>
