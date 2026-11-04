@@ -1,1 +1,116 @@
+/* ITINERARY PAGE */
+
+main {
+    padding: 25px;
+}
+
+main section {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+main h2 {
+    color: #005f8f;
+    margin-bottom: 10px;
+}
+
+article {
+    margin-top: 15px;
+}
+
+/* TRAVEL SCHEDULE TABLE */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+caption {
+    font-weight: bold;
+    padding: 10px;
+}
+
+th {
+    background-color: #005f8f;
+    color: white;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+tr:nth-child(even) {
+    background-color: #f0f7fa;
+}
+
+/* BUDGET LIST */
+
+#budget li {
+    padding: 8px;
+    margin-bottom: 5px;
+}
+
+/* BOOKING FORM */
+
+form label {
+    display: block;
+    margin-top: 12px;
+    font-weight: bold;
+}
+
+form input,
+form select,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+fieldset {
+    margin-top: 15px;
+    padding: 12px;
+}
+
+fieldset input {
+    width: auto;
+}
+
+form button {
+    background-color: #005f8f;
+    color: white;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #003f60;
+}
+
+/* PLAN FURTHER */
+
+#more img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+}
+
+#more a {
+    color: #005f8f;
+}
+
+#more a:hover {
+    color: #e09f3e;
+}
 
